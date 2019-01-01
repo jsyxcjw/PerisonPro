@@ -2,13 +2,19 @@
 
 // Declare app level module which depends on views, and core components
 angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+    'ngRoute',
+    // 'oc.lazyLoad',
+    'myApp.brand',
+    'myApp.view2',
+    'myApp.version'
+]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
+    $locationProvider.hashPrefix('');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+    $routeProvider.otherwise({redirectTo: '/view2'});
+
+    // $ocLazyLoadProvider.config({debug: true, events: true, modules: [
+    //         {name: 'brand', files: ['business/brand/brandCtrl.js']}]});
+
 }]);
+
+

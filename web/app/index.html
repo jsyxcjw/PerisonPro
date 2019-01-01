@@ -21,10 +21,6 @@
 
 </head>
 <body>
-<ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-</ul>
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -51,11 +47,6 @@
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
                     </ul>
                 </li>
             </ul>
@@ -77,18 +68,17 @@
 
 <div ng-view></div>
 
-<div>AngularJS seed app: v<span app-version></span></div>
 
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
-<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular/angular.js"></script>
 <script src="lib/angular/angular-route.min.js"></script>
 <script src="lib/echarts.min.js"></script>
 <script src="lib/jquery-3.3.1.min.js"></script>
 <script src="lib/bootstrap/bootstrap.min.js"></script>
 <script src="app.js"></script>
-<script src="view1/view1.js"></script>
+<script src="business/brand/brandCtrl.js"></script>
 <script src="view2/view2.js"></script>
 <script src="core/version/version.js"></script>
 <script src="core/version/version-directive.js"></script>
